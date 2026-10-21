@@ -6,28 +6,29 @@ let seguir = "si";
 while (seguir == "si") {
 
     let producto = prompt(
-        "Escriba el número de la fruta:" + "1. Maracuya" + "2. Naranjas" + "3. Limones" +   "4. Mangos" + "5. Piñas" );
+        "Escriba el número de la fruta:" + "1. Maracuya" + "2. Naranjas" +"3. Limones" + "4. Mangos" + "5. Piñas"
+    );
 
     let precio = 0;
 
     switch (producto) {
-        case 1:
+        case "1":
             precio = 4000;
             break;
 
-        case 2:
+        case "2":
             precio = 2500;
             break;
 
-        case 3:
+        case "3":
             precio = 3000;
             break;
 
-        case 4:
+        case "4":
             precio = 5000;
             break;
 
-        case 5:
+        case "5":
             precio = 3500;
             break;
 
@@ -36,8 +37,12 @@ while (seguir == "si") {
             continue;
     }
 
-    let cantidad = Number(prompt("¿Cuantos kilos desea comprar?"));
+    let cantidad = Number(
+        prompt("¿Cuantos kilos desea comprar?")
+    );
+
     let subtotal = precio * cantidad;
+
     total = total + subtotal;
 
     alert("El precio de la compra es: $" + subtotal);
@@ -52,4 +57,3 @@ for (let i = 1; i <= 1; i++) {
 }
 
 comprarFrutas();
-
