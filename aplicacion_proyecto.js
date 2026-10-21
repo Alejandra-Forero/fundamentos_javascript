@@ -45,8 +45,6 @@ while (seguir == "si") {
     total = total + subtotal;
   console.log(`el producto que compro fue el item  ${producto} con un valor total de ${subtotal}`);
 
-    alert("El precio de la compra es: $" + subtotal);
-
     seguir = prompt("¿Desea comprar otra fruta? si o no");
 }
 
