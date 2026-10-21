@@ -36,7 +36,6 @@ while (seguir == "si") {
             alert("Producto no valido");
             continue;
     }
-
     let cantidad = Number(
         prompt("¿Cuantos kilos desea comprar?")
     );
@@ -44,6 +43,7 @@ while (seguir == "si") {
     let subtotal = precio * cantidad;
 
     total = total + subtotal;
+  console.log(`el producto que compro fue el item  ${producto} con un valor total de ${subtotal}`);
 
     alert("El precio de la compra es: $" + subtotal);
 
@@ -53,7 +53,7 @@ while (seguir == "si") {
 for (let i = 1; i <= 1; i++) {
     alert("El total a pagar es: $" + total);
 }
-
+console.log("Total de la compra: $" + total);
 }
 
 comprarFrutas();
