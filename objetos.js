@@ -41,3 +41,33 @@ let aprendiz2=new aprendizSENA("Samuel","Cardenas","samuel123@gmail.com","electr
 console.log(aprendiz2);
 console.log(aprendiz2.nombre);
 
+aprendiz.saludar();
+
+//modificar las propiedaqdes de un objeto
+
+aprendiz.correo="valentinaaa@gmail.com";
+console.log(aprendiz.correo);
+
+aprendiz.programa="salud y seguridad en el trabajo";
+console.log(aprendiz.programa);
+
+//agregar una propiedad
+
+aprendiz.telefono=3213782510;
+console.log(aprendiz);
+
+aprendiz.titulos="tecnico en sistemas";
+console.log(aprendiz.titulos);
+
+// eliminar una propiedad en un objeto
+delete aprendiz.titulos;
+console.log(aprendiz)
+
+//iteracion recorrer cada propiedad del elemento FOR-IN
+for(let propiedad in aprendiz){
+//imprime un solo valor 
+console.log("este es el name"+ aprendiz["nombre"])
+
+  console.log(propiedad);//imprime claves
+console.log(aprendiz[propiedad])
+}
