@@ -26,3 +26,6 @@ console.log(resultado);
 
 resultado = "Aprobado";
 console.log(resultado);
+
+//reto adicional
+
